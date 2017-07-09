@@ -6,9 +6,8 @@ A JSON Web Token (JWT) is a JSON object that is defined in RFC 7519 as a safe wa
 To know more about JWT, visit: https://jwt.io/introduction/ and https://tools.ietf.org/html/rfc7519
 
 ## Approach
+*Overall process flow for sso with jwt*
 ![sso approach](assets/sso_using_jwt.png)
-<center> <i>Overall process flow for sso with jwt</i> </center>  
-
 
 In the above diagram `Service 1 (S1)` is the primary service which the user is already logged in.  
 `Service 2 (S2)` is the external service the user want to login using SSO.  

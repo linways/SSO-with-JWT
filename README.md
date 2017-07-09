@@ -16,7 +16,7 @@ In the above diagram `Service 1 (S1)` is the primary service which the user is a
 
 Both `S1` and `S2` can maintain a database of partners  as follows.  
 
-**sso_partner**  
+** sso_partner **  
 
 |id|partner_name|shared_key|is_active|
 |--|-----------|---------|-----------|
@@ -36,7 +36,7 @@ Therefore, a JWT typically looks like the following.
 `xxxxx.yyyyy.zzzzz`
 
 More details about JWT can be found at: https://jwt.io/introduction/ and https://tools.ietf.org/html/rfc7519
-#####Header
+##### Header
 The header typically consists of two parts: the type of the token, which is JWT, and the hashing algorithm being used, such as HMAC SHA256 or RSA.  
 Since we are relaying on a shared key the hashing algorithm will be `HS256` (HMAC with SHA256).  
 
@@ -48,7 +48,7 @@ Example:
 }
 ```
 Then, this JSON is Base64Url encoded to form the first part of the JWT.
-#####Payload
+##### Payload
 The second part of the token is the payload, which contains the claims. Claims are statements about an entity (typically, the user) and additional metadata. Read more about different types of claims at https://jwt.io/introduction/#payload.
 
 Example for standard payload used at Linways:
@@ -70,7 +70,7 @@ In the above example `email` is the email address of the user who request access
 The payload is then Base64Url encoded to form the second part of the JSON Web Token.
 
 
-#####Signature  
+##### Signature  
 To create the signature part you have to take the encoded header, the encoded payload, a secret, the algorithm specified in the header, and sign that.
 
 Since we are using HMAC SHA256 algorithm, the signature will be created in the following way:
@@ -90,11 +90,11 @@ eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFiY0B4eXouY29tIiwidWlkIjoiMjQ
 
 [Click Here](http://bit.ly/2tZbHNY) to view this token in JWT debugger.
 
-####Auto login on service 2  
+#### Auto login on service 2  
 This generated token should be passed to the `S2`. Since JWT is compact we can pass it through URL, POST parameter or inside HTTP Authentication header.
 
 When `S2` receives the token, it can verify the signature using the shared key <code>K<sub>sp1</sub></code>. Once the token is validated check `exp` and `iss`, `aud` to make sure the token is not expired and issuer and audience. When all these check are positive, the S2 can automatically login the user with this token.
 
-##Libraries for Token Signing/Verification  
+## Libraries for Token Signing/Verification  
 Since, JWT is very popular and well accepted, almost all programming languages have libraries to create and verify the token.  
 You can find different libraries for handling JWT here: https://jwt.io/#libraries

@@ -16,7 +16,7 @@ In the above diagram `Service 1 (S1)` is the primary service which the user is a
 
 Both `S1` and `S2` can maintain a database of partners  as follows.  
 
-#### sso_partner 
+#### sso_partner
 
 |id|partner_name|shared_key|is_active|
 |--|-----------|---------|-----------|
@@ -98,3 +98,6 @@ When `S2` receives the token, it can verify the signature using the shared key <
 ## Libraries for Token Signing/Verification  
 Since, JWT is very popular and well accepted, almost all programming languages have libraries to create and verify the token.  
 You can find different libraries for handling JWT here: https://jwt.io/#libraries
+
+## Example
+1. [Proof of concept in PHP](https://github.com/linways/SSO-with-JWT/tree/master/examples/php)

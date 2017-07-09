@@ -21,7 +21,7 @@ Both `S1` and `S2` can maintain a database of partners  as follows.
 |id|partner_name|shared_key|is_active|
 |--|-----------|---------|-----------|
 |46323| Service 2|5f4dcc3b5aa765d61d8327deb882cf99|true|
-|26432|Serice 3| 482c811da5d5b4bc6d497ffa98491e38|false|
+|26432|Service 3| 482c811da5d5b4bc6d497ffa98491e38|false|
 
 If required, each service can implement access control mechanisms for their partner services.
 

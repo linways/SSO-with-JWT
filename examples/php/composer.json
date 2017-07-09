@@ -1,0 +1,14 @@
+{
+  "name": "linways/sso-with-jwt-php",
+  "description": "Example implementation of SSO with JWT in PHP",
+  "type": "project",
+  "license": "MIT",
+  "authors": [{
+    "name": "Rohith",
+    "email": "rohith@linways.com"
+  }],
+  "require": {
+    "nikic/fast-route": "^1.2",
+    "firebase/php-jwt": "^5.0"
+  }
+}

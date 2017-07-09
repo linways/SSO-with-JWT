@@ -41,7 +41,7 @@ function generateToken($ssoId, $key){
  *
  * @param  {String} $ssoId SSO partner id
  * @param  {String} $jwt   JSON Web Token from sso partner
- * @return {AssocArray}    token content
+ * @return {AssocArray}    token content if token in valid
  */
 function verifyToken($ssoId, $jwt){
   // Get partner details using ssoId

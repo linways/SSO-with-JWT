@@ -101,3 +101,4 @@ You can find different libraries for handling JWT here: https://jwt.io/#librarie
 
 ## Example
 1. [Proof of concept in PHP](https://github.com/linways/SSO-with-JWT/tree/master/examples/php)
+2. [Proof of concept in Python](https://github.com/linways/SSO-with-JWT/tree/master/examples/python)

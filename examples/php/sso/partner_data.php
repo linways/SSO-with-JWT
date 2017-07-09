@@ -13,7 +13,7 @@
        'is_active' => true
      ),
       'abcd1234' => array(     // this is the shared partner sso id
-        'name' => 'Partner 1 inc.',
+        'name' => 'Partner 2 inc.',
         'shared_key' => '482c811da5d5b4bc6d497ffa98491e38',
         'is_active' => false
        )

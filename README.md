@@ -8,7 +8,7 @@ To know more about JWT, visit: https://jwt.io/introduction/ and https://tools.ie
 ## Advantages
 * Loosely coupled - No server to server communication hence less chances of failures.
 * Highly scalable - No need of direct server to server communication. No need to maintain trusted IPs.
-* JWT a JSON based open standard ([RFC 7519](https://tools.ietf.org/html/rfc7519)), no need to implement custom methods for generation and verification of tokens.
+* JWT a JSON based open standard ([RFC 7519](https://tools.ietf.org/html/rfc7519)), no need to implement custom methods for generation and verification of tokens. (JWT libraries are available in almost every programming language)
 * Supports both symmetric and asymmetric cryptographic algorithms. 
 
 ## Approach

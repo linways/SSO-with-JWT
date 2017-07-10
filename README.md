@@ -5,6 +5,12 @@ Approach to achieve single sign on (SSO) using JSON Web Tokens (JWT).
 A JSON Web Token (JWT) is a JSON object that is defined in RFC 7519 as a safe way to represent a set of information between two parties. The token is composed of a header, a payload, and a signature.  
 To know more about JWT, visit: https://jwt.io/introduction/ and https://tools.ietf.org/html/rfc7519
 
+## Advantages
+* Loosely coupled - No server to server communication hence less chances of failures.
+* Highly scalable - No need of direct server to server communication. No need to maintain trusted IPs.
+* JWT a JSON based open standard ([RFC 7519](https://tools.ietf.org/html/rfc7519)), no need to implement custom methods for generation and verification of tokens.
+* Supports both symmetric and asymmetric cryptographic algorithms. 
+
 ## Approach
 *Overall process flow for sso with jwt*
 ![sso approach](assets/sso_using_jwt.png)

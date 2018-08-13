@@ -11,6 +11,7 @@ try{
   $token = verifyToken($ssoId, $jwt);
 
   // Creating the response
+  // Write the logic for logging in the user and redirect to required page
   echo "<b>Token verified:</b> <br/>";
   print_r($token);
 
